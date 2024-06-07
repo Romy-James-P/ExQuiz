@@ -1,0 +1,137 @@
+:root {
+  --bgColour: white;
+  --contentColour: yellow;
+  --expColour: #dc143c;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bgColour);
+}
+.top-players img:hover{
+    transform: scale(1.1);
+}
+.top-players h1{
+    background-color: var(--expColour);
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 0;
+}
+h1 i{
+    margin-right: 15px;
+}
+#first img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite;
+}
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 5px 3px gold; /* Start with no shadow */
+    }
+    50% {
+      box-shadow: 0 0 20px 10px gold; /* Shadow grows */
+    }
+    100% {
+      box-shadow: 0 0 5px 3px gold; /* Shadow shrinks */
+    }
+  }
+.trofy{
+    border:2px solid var(--expColour);
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+#first i{
+    color: gold;
+    margin-right: 10px;
+}
+#secondThird {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+#second i{
+  color: silver;
+  margin-right: 10px;
+}
+#second img {
+  width: 6rem;
+  height: 6rem;
+  animation: pulse 3s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+#third i{
+  color:#cd7f32;
+  margin-right: 10px;
+}
+#third img {
+  width: 6rem;
+  height: 6rem;
+  animation: pulse 3s ease-in-out infinite;
+  border-radius: 50%;
+}
+
+.leaderboard-container {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.leaderboard-container img:hover{
+    transform: scale(3);
+}
+
+.leaderboard-container h1 {
+  background-color: var(--expColour);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: var(--expColour);
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+}
+
+.player-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+/* .player-info img:hover {
+  transform: scale(5);
+} */
